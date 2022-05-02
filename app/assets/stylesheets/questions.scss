@@ -1,0 +1,18 @@
+// Place all the styles related to the questions controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$gray: #F4F4F4;
+
+h1 {
+  text-align: center;
+}
+div {
+  background: $gray;
+  border-left: 2px solid;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-left: 4px;
+}
