@@ -1,17 +1,15 @@
 class QuestionsController < ApplicationController
-  def ask
-
-  end
+  def ask; end
 
   def answer
     @question = params[:question]
 
-    if @question == "i am going to work right now!"
-      @answer = "Great!"
-    elsif @question.upcase == "I AM GOING TO WORK RIGHT NOW!"
-      @answer = "I can feel your motivation!"
-    elsif @question.end_with?("?")
-      @answer = "Silly question, get dressed and go to work!"
+    if @question == 'I am going to work right now!'
+      @answer = 'Great!'
+    elsif @question.upcase == 'I AM GOING TO WORK RIGHT NOW!'
+      @answer = 'I can feel your motivation!'
+    elsif @question.end_with?('?')
+      @answer = 'Silly question, get dressed and go to work!'
     else
       @answer = "I don't care, get dressed and go to work!"
 
